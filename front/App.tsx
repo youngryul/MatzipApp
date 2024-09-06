@@ -6,26 +6,20 @@
  */
 
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+
+import {NavigationContainer} from "@react-navigation/native";
+
+import AuthStackNavigator from "./src/navigations/stack/AuthStackNavigator";
+import RootNavigator from "./src/navigations/root/RootNavigator";
 
 
-function App(): React.JSX.Element {
+function App() {
   
-  return ( 
-    <View>
-      <Text>테스트</Text>
-    </View>
+  return (
+      <NavigationContainer>
+        <RootNavigator/>
+      </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'red'
-  }
-});
 
 export default App;
