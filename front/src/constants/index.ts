@@ -1,7 +1,2 @@
-// 상수 지정
-const authNavigations = {
-    AUTH_HOME : 'AuthHome',
-    LOGIN :'Login',
-} as const; // read only
-
-export {authNavigations}
+export * from './color';
+export * from './navigations';
